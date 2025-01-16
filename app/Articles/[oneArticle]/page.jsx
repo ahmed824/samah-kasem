@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./ArticlePage.module.css";
+import styles from "./[name]/ArticlePage.module.css";
 import { useArticles } from "@/components/customHook/useArticles";
 import { imageUrl } from "@/components/baseUrl";
 import Loader from "@/components/Loader/page";

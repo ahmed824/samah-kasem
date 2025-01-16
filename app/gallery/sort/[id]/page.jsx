@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./SingleProduct.module.css";
+import styles from "./[name]/SingleProduct.module.css";
 import ShowImage from "../../../../components/ShowImage/page";
 import { useParams } from "next/navigation";
 import { useGalleryDetails } from "@/components/customHook/useGalleryDetails";
