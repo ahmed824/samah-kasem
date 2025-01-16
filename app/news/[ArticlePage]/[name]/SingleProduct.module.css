@@ -1,0 +1,166 @@
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subHeader {
+  background-image: url("/images/imagess.jfif");
+  background-size: cover;
+  background-position: top;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(129, 100, 75, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #463c2d !important;
+  padding: 0 15px;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.normal {
+  color: #fff5e6;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.main {
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Tajawal", sans-serif;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleImage {
+  /* width: auto; */
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.content {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.relatedNews {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.relatedNewsTitle {
+  color: #81644b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.relatedArticleCard {
+  background-color: #81644b;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  margin: 0 10px;
+  display: block;
+  max-height: 196px;
+  min-height: 196px;
+}
+
+.relatedArticleCard:hover {
+  transform: translateY(-5px);
+}
+
+.relatedArticleImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.relatedArticleTitle {
+  color: #fff5e6;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.homeButton {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #81644b;
+  color: #fff5e6;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.homeButton:hover {
+  background-color: #6a5239;
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 16px;
+  }
+
+  .header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
+  .homeButton {
+    width: 100%;
+    text-align: center;
+  }
+}

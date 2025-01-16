@@ -1,0 +1,80 @@
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.dressLoader {
+  margin-bottom: 20px;
+}
+
+.dress {
+  fill: none;
+  stroke: var(--main-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: drawDress 3s infinite;
+}
+
+.loadingText {
+  font-family: "Playfair Display", serif;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  animation: fadeInOut 2s infinite;
+}
+
+.sparkle1,
+.sparkle2,
+.sparkle3 {
+  fill: #ffd700;
+  animation: sparkle 1.5s infinite;
+}
+
+.sparkle2 {
+  animation-delay: 0.5s;
+}
+
+.sparkle3 {
+  animation-delay: 1s;
+}
+
+@keyframes drawDress {
+  0% {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+  }
+  50% {
+    stroke-dasharray: 300;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dasharray: 300;
+    stroke-dashoffset: -300;
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

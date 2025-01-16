@@ -1,0 +1,82 @@
+.logInContainer {
+    width: 50%;
+    margin: 116px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logInContent {
+    padding: 20px;
+}
+
+.inputGroup {
+    margin-bottom: 15px;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: right;
+}
+
+.checkboxGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    flex-direction: row-reverse;
+
+}
+
+.socialButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.submitButton {
+    width: 100%;
+    background-color: #CD0E17;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footerText {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footerText a {
+    color: #09499A;
+    margin-right: 16px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.forgett {
+    color: #09499A;
+    font-size: 18px;
+}
+
+
+
+@media (max-width:768px) {
+    .logInContainer {
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,90 @@
+.fixedIcons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.2s ease-in !important;
+}
+
+.icon:first-child {
+    background-color: #25D366;
+    /* WhatsApp color */
+    text-decoration: none;
+}
+
+.icon:nth-child(2) {
+    background-color: #0084FF;
+    /* Messenger color */
+    text-decoration: none;
+}
+
+.icon:nth-child(3) {
+    background-color: #4CAF50;
+    /* Phone color */
+    text-decoration: none;
+}
+
+.icon:last-child {
+    background-color: #ffffff7a;
+    color: #000;
+    text-decoration: none;
+    border-radius: 0% !important;
+    box-shadow: rgba(100, 100, 111, 0.477) 0px 7px 29px 0px;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media (max-width:785px) {
+    .fixedIcons {
+        /* position: absolute; */
+        bottom: 0;
+        /* right: 20px; */
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        z-index: 3;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 106%;
+        border-radius: 0%;
+        right: -20px !important;
+        position: relative;
+    }
+
+}

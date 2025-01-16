@@ -1,0 +1,86 @@
+.container {
+  padding: 2rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+  direction: rtl;
+  margin-top: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.addBtn {
+  background-color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  transition: all 0.3s ease !important;
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 8px !important;
+}
+
+.addBtn:hover {
+  background-color: transparent !important;
+  color: var(--main-color) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(129, 100, 75, 0.2);
+}
+
+.table {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog {
+  width: 50vw;
+  max-width: 800px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #333;
+}
+
+.submitBtn {
+  align-self: flex-end;
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dialog {
+    width: 90vw;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

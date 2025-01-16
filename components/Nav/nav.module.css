@@ -1,0 +1,159 @@
+.image {
+  width: auto;
+  height: auto;
+}
+
+
+.facebook {
+  font-size: 20px;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ddd;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s ease;
+  text-decoration: none;
+}
+
+.instagram {
+  font-size: 20px;
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ddd;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.instagram:hover {
+  font-size: 28px;
+  color: #833ab4;
+  font-weight: bold;
+}
+
+.facebook:hover {
+  transform: rotate(360deg);
+  color: #1877f2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.sidenav {
+  text-align: center;
+  z-index: 999 !important;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+  padding-bottom: 66px;
+}
+
+.sidenav.open {
+  width: 250px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.imgg {
+  margin-top: 50px;
+}
+
+.sideinner {
+  margin-top: 20px;
+  color: var(--main-color) !important;
+}
+
+.navItem {
+  color: var(--main-color);
+  font-size: 22px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.navItem:hover {
+  /* background-color: #ddd; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.navLink {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.logoutBtn {
+  background: transparent;
+  color: #81644b;
+  border: 2px solid #81644b;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.logoutBtn:hover {
+  background: #81644b;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(129, 100, 75, 0.2);
+}
+
+.logoutBtn:active {
+  transform: translateY(0);
+  background: #6f553f;
+}
+
+.logoutBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(129, 100, 75, 0.3);
+}
+
+@media (max-width: 768px) {
+  .socialLinks {
+    display: none;
+  }
+}

@@ -1,0 +1,105 @@
+.app {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sliderContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slickSlide {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.imgResponsive {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 385px;
+}
+
+.thumbnailSlider {
+    margin-top: 10px;
+}
+
+.thumbnailItem {
+    padding: 0 2px;
+}
+
+.thumbnailItem img {
+    height: auto;
+    max-height: 82px;
+    width: auto;
+    /* margin: auto; */
+}
+
+.thumbnailSlider :global(.slick-slide) {
+    margin: 0 2px;
+}
+
+.thumbnailSlider :global(.slick-list) {
+    margin: 0 -2px;
+}
+
+/* Style for the active thumbnail */
+/* .thumbnailSlider :global(.slick-current) .thumbnailImage {
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .sliderContainer {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sliderContainer {
+        max-width: 400px;
+    }
+    
+    .thumbnailSlider :global(.slick-slide) {
+        margin: 0 1px;
+    }
+
+    .thumbnailSlider :global(.slick-list) {
+        margin: 0 -1px;
+    }
+}
+
+@media (max-width: 425px) {
+    .sliderContainer {
+        max-width: 300px;
+    }
+
+    .thumbnailSlider {
+        margin-top: 5px;
+    }
+
+    /* .thumbnailItem {
+        padding: 0 36px;
+    } */
+
+    .thumbnailSlider :global(.slick-slide) {
+        margin: 0 1px;
+    }
+
+    .thumbnailSlider :global(.slick-list) {
+        margin: 0 -1px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .thumbnailItem {
+        display: none !important; 
+    }
+
+}

@@ -1,0 +1,205 @@
+.footer {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galleryImage {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.quickLinks {
+    text-align: center;
+}
+
+.linksList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link {
+    display: block;
+    margin: 5px 0;
+    color: #333333ba;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: var(--main-color);
+}
+
+.brandSection {
+    text-align: center;
+}
+
+.brandLogo {
+    width: auto !important;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.brandDescription {
+    color: #000;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.socialIcons a {
+    margin: 0 5px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.socialIcons a:hover {
+    color: #555;
+}
+
+.footerBottom {
+    background-color: #835a3a;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.facebook {
+    font-size: 20px;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ddd;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease;
+
+}
+
+.instagram {
+    font-size: 20px;
+    margin-left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ddd;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.instagram:hover {
+    /* transform: rotate(360deg); */
+    font-size: 28px;
+    color: #833AB4 !important;
+    font-weight: bold;
+}
+
+
+.facebook:hover {
+    transform: rotate(360deg);
+    color: #1877F2 !important;
+}
+
+
+.images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imageWrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    /* Adjust according to your image size */
+    height: 150px;
+    /* Adjust according to your image size */
+}
+
+.galleryImage {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.imageWrapper:hover .galleryImage {
+    transform: scale(1.1);
+    /* Zoom effect */
+    opacity: 0.8;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(131 90 58 / 33%);
+    /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageWrapper:hover .imageOverlay {
+    opacity: 1;
+}
+
+.imageOverlayIcon {
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imageWrapper:hover .imageOverlayIcon {
+    transform: scale(1.2);
+    /* Slight zoom on the icon */
+}

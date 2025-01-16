@@ -1,0 +1,197 @@
+.container {
+  padding: 2rem;
+  background: #f8f9fa;
+  min-height: 100vh;
+  direction: rtl;
+  margin-top: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: var(--main-color);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.addBtn {
+  background-color: var(--main-color) !important;
+  border: 2px solid var(--main-color) !important;
+  transition: all 0.3s ease !important;
+  padding: 0.8rem 1.5rem !important;
+  border-radius: 8px !important;
+}
+
+.addBtn:hover {
+  background-color: transparent !important;
+  color: var(--main-color) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(129, 100, 75, 0.2);
+}
+
+.dialog {
+  width: 50vw;
+  max-width: 800px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #333;
+}
+
+.submitBtn {
+  align-self: flex-end;
+  background-color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* Table Container */
+.table {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  padding: 1.5rem;
+}
+
+/* Table Header */
+.table :global(.p-datatable-header) {
+  background: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+/* Column Headers */
+.table :global(.p-column-header-content) {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.table :global(.p-sortable-column:hover) {
+  background: rgba(129, 100, 75, 0.05) !important;
+}
+
+.table :global(.p-sortable-column.p-highlight) {
+  background: rgba(129, 100, 75, 0.1) !important;
+  color: var(--main-color) !important;
+}
+
+/* Table Rows */
+.table :global(.p-datatable-tbody > tr) {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.table :global(.p-datatable-tbody > tr:hover) {
+  background: rgba(129, 100, 75, 0.05) !important;
+  transform: translateY(-2px);
+}
+
+/* Table Cells */
+.table :global(.p-datatable-tbody > tr > td) {
+  padding: 1rem;
+  color: #333;
+  text-align: right;
+}
+
+/* Pagination */
+.table :global(.p-paginator) {
+  background: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+.table :global(.p-paginator .p-paginator-element) {
+  color: var(--main-color);
+  border-radius: 8px;
+  margin: 0 0.2rem;
+}
+
+.table :global(.p-paginator .p-highlight) {
+  background: var(--main-color);
+  color: white;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.actionButtons :global(.p-button) {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: transform 0.2s ease;
+}
+
+.actionButtons :global(.p-button:hover) {
+  transform: scale(1.1);
+}
+
+/* Loading State */
+.table :global(.p-datatable-loading-overlay) {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+/* Empty Message */
+.table :global(.p-datatable-emptymessage td) {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table {
+    padding: 0.5rem;
+  }
+
+  .table :global(.p-datatable-tbody > tr > td) {
+    padding: 0.75rem;
+  }
+
+  .actionButtons {
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dialog {
+    width: 90vw;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
